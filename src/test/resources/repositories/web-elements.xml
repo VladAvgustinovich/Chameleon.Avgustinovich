@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Добавление товара" locator="//h5[@id ='editModalLabel']" waitTimeOut="1">
+        <TextInput name="Наименование" locator="//input[@id ='name']" isLoaded="true" waitTimeOut="1"/>
+        <ComboBox name="Тип" locator="//select[@id ='type']" isLoaded="false" waitTimeOut="1"/>
+        <CheckBox name="Экзотический" locator="//input[@id ='exotic']" isLoaded="false" waitTimeOut="1"/>
+        <Button name="Сохранить" locator="//button[@id ='save']" isLoaded="true" waitTimeOut="1000"/>
+        <Button name="Овощ" locator="//option[@value='VEGETABLE' ]"/>
+        <Button name="Фрукт" locator="//option[@value='FRUIT' and text()='Фрукт']
+"/>
+    </Page>
+    <Page name="Главная страница">
+        <Button name="Песочница" locator="//a[@id='navbarDropdown']"/>
+        <Button name="Логотип" locator="//a[@class='navbar-brand' and text()='QualIT']"/>
+        <Button name="XSD-схемы" locator="//a[@class='nav-link' and text()='XSD-схемы']"/>
+        <Button name="API" locator="//a[@class='nav-link' and text()='API']"/>
+        <Button name="Товары" locator="//a[@class='dropdown-item' and text()='Товары']"/>
+        <Button name="Сброс данных" locator="//a[@id='reset']"/>
+    </Page>
+    <Page name="Список товаров" locator="//h5[text()='Список товаров']">
+        <Button name="Добавить" locator="//button[@type='button' and text()='Добавить']"/>
+        <Button name="Песочница" locator="//a[@id='navbarDropdown']"/>
+        <Button name="Сброс данных" locator="//a[@id='reset']"/>
+    </Page>
+</Pages>
